@@ -1,0 +1,67 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --ff-aqua: #00C0FA;
+  --ff-blue: #4261ED;
+  --ff-purple: #6717CC;
+  --ff-text: #fff; 
+  --ff-background: #111;
+  --ff-module-background: #222;
+  --ff-link:rgba(255,255,255,.55);
+  --ff-link-hover:rgba(255,255,255,.75);
+}
+
+body {
+  background-color: var(--ff-background);;
+  margin:0px;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  color: var(--ff-text);
+}
+
+.navlink.active {
+  color: var(--ff-text);
+}
+
+.navlink.active:hover {
+  color: var(--ff-text);
+}
+
+.navlink {
+  color: var(--ff-link);
+  text-decoration: none;
+  transition: color .15s ease-in-out;
+}
+
+.navlink:hover {
+  color: var(--ff-link-hover);
+}
+
+.outer {
+  background: linear-gradient(135deg, var(--ff-aqua) 0%, var(--ff-blue) 50%, var(--ff-purple) 100%);
+}
+
+.outer.bottom {
+  padding-bottom: 3px; 
+}
+
+.outer.top{
+  padding-top: 3px;
+}
+
+.module {
+  background: var(--ff-module-background);
+  padding: 32px;
+}
+
+footer {
+  margin-top: auto; 
+  width: 100%;
+}
+
+.icon {
+  width: 32px;
+}
