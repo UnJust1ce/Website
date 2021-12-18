@@ -111,13 +111,16 @@ header:not(.dropdowndisplay) {
 
 .nav-ul {
   display: flex;
-  height: 40px;
   width: 100%;
   flex-flow: row;
   align-items: flex-start;
   justify-content: space-between;
   padding: 0px;
   list-style: none;
+}
+
+.nav-ul:not(.small .nav.dropdowndisplay .nav-ul) {
+  height: 40px;
 }
 
 .nav-a {
