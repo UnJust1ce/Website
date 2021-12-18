@@ -106,7 +106,6 @@ header:not(.dropdowndisplay) {
   position: initial;
   flex-grow: 0.7;
   padding-top: 12px;
-  height: 68px;
 }
 
 .nav-ul {
