@@ -9,6 +9,7 @@
   --ff-lightaqua: #99e6fd;
   --ff-lightblue: #b3c0f8;
   --ff-lightpurple: #c2a2eb;
+  --ff-lightpurplebg: rgb(194, 162, 235);
   --ff-text: #fff;
   --ff-background: #111;
   --ff-module-background: #222;
@@ -317,11 +318,13 @@ footer {
 
 .footer-links {
   max-width: 1080px;
+  text-align: center;
   width: 100%;
 }
 
 .footer-column {
   display: inline-block;
+  text-align: left;
   vertical-align: top;
   width: 19%;
 }
@@ -345,4 +348,44 @@ footer {
   footer {
     display: none;
   }
+}
+
+section {
+  padding: 60px 0 0 0;
+}
+
+h1 {
+  font-size: calc(150% + 3vw);
+  background-image: linear-gradient(135deg, var(--ff-aqua) 0%, var(--ff-blue) 50%, var(--ff-purple) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: calc(50% + 2.5vw);
+  background-image: linear-gradient(135deg, var(--ff-aqua) 0%, var(--ff-blue) 50%, var(--ff-purple) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: normal;
+}
+
+::selection {
+  background-color: var(--ff-lightpurplebg);
+  background-clip: border-box;
+  -webkit-text-fill-color: initial;
+}
+
+.fab {
+  width: 17.5px !important;
 }
