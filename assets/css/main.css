@@ -389,3 +389,21 @@ h2 {
 .fab {
   width: 17.5px !important;
 }
+
+a.btn {
+  border: 1px solid;
+  border-image: linear-gradient(135deg, var(--ff-aqua) 0%, var(--ff-blue) 50%, var(--ff-purple) 100%) 1;
+  border-radius: .3rem;
+  padding: .5rem 1rem;
+  font-size: 1.25rem;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+section.center {
+  text-align: center;
+}
