@@ -20,13 +20,12 @@
 }
 
 body {
-  background-color: var(--ff-background);;
+  background-color: var(--ff-module-background);;
   margin: 0px;
   padding: 0px;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  width: 100vw;
+  height: calc(100vh - 92px);
   color: var(--ff-text);
 }
 
@@ -71,6 +70,7 @@ header {
   column-gap: 40px;
   height: 92px;
   transition: height 0.15s ease-in-out;
+  overflow-x: hidden;
 }
 
 header:not(.dropdowndisplay) {
@@ -186,6 +186,16 @@ header.dropdowndisplay.small {
   flex-flow: column wrap;
   height: 300px;
   overflow-y: hidden;
+}
+
+header.small {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+}
+
+body.small {
+  margin-top: 92px;
 }
 
 header.dropdowndisplay.small .nav.dropdowndisplay .nav-ul .expanded ul {
@@ -351,7 +361,8 @@ footer {
 }
 
 section {
-  padding: 60px 0 0 0;
+  padding: 60px 0 60px 0;
+  background-color: var(--ff-background)
 }
 
 h1 {
@@ -378,6 +389,7 @@ h2 {
   margin-left: auto;
   margin-right: auto;
   font-weight: normal;
+  margin-block-end: calc(0.83em - 0.5vh);
 }
 
 ::selection {
@@ -391,19 +403,50 @@ h2 {
 }
 
 a.btn {
-  border: 1px solid;
+  border: 2px solid;
   border-image: linear-gradient(135deg, var(--ff-aqua) 0%, var(--ff-blue) 50%, var(--ff-purple) 100%) 1;
   border-radius: .3rem;
-  padding: .5rem 1rem;
-  font-size: 1.25rem;
+  padding: 0.5vh 1vw;
+  font-size: calc(1.56vw + 50%);
   display: inline-block;
   text-decoration: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  background-image: linear-gradient(135deg, var(--ff-aqua) 0%, var(--ff-blue) 50%, var(--ff-purple) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: padding .15s ease-in-out, margin .15s ease-in-out;
+  margin-bottom: 0.5vh;
+  margin-top: 0.5vh;
+}
+
+@keyframes AnimateBG { 
+  0% {background-position: 0% 0%}
+  100% {background-position: 100% 0%}
+}
+
+a.btn:hover {
+  background-image: linear-gradient(135deg, var(--ff-aqua) 0%, var(--ff-blue) 20%, var(--ff-purple) 40%, var(--ff-aqua) 60%, var(--ff-blue) 80%, var(--ff-purple) 100%);
+  background-size: 260% 100%;
+  padding: 1vh 2.5vw;
+  margin-bottom: 0;
+  margin-top: 0;
+  animation: AnimateBG 2s linear infinite;
 }
 
 section.center {
   text-align: center;
+}
+
+body .extension{
+  display: none;
+}
+
+body.small .extension{
+  display: block;
+  background-color: var(--ff-background);
+  height: 100%;
 }
