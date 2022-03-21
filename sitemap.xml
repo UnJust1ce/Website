@@ -2,36 +2,31 @@
    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
-    <loc>https://unjust1ce.github.io/Website/</loc>
+    <loc>https://fastforward.team/</loc>
   </url>
   <url>
-    <loc>https://unjust1ce.github.io/Website/about.html</loc>
+    <loc>https://fastforward.team/chrome.html</loc>
   </url>
   <url>
-    <loc>https://unjust1ce.github.io/Website/chrome.html</loc>
+    <loc>https://fastforward.team/firefox.html</loc>
   </url>
   <url>
-    <loc>https://unjust1ce.github.io/Website/firefox.html</loc>
+    <loc>https://fastforward.team/chromium.html</loc>
   </url>
   <url>
-    <loc>https://unjust1ce.github.io/Website/brave.html</loc>
+    <loc>https://fastforward.team/kiwi.html</loc>
   </url>
   <url>
-    <loc>https://unjust1ce.github.io/Website/kiwi.html</loc>
+    <loc>https://fastforward.team/edge.html</loc>
   </url>
   <url>
-    <loc>https://unjust1ce.github.io/Website/edge.html</loc>
+    <loc>https://fastforward.team/faq.html</loc>
   </url>
   <url>
-    <loc>https://unjust1ce.github.io/Website/faq.html</loc>
+    <loc>https://fastforward.team/contact.html</loc>
   </url>
   <url>
-    <loc>https://unjust1ce.github.io/Website/contact.html</loc>
-  </url>
-  <url>
-    <loc>https://unjust1ce.github.io/Website/crowd-bypass.html</loc>
-  </url>
-  <url>
-    <loc>https://unjust1ce.github.io/Website/privacy.html</loc>
+    <loc>https://fastforward.team/privacy.html</loc>
   </url>
 </urlset>
+
