@@ -24,8 +24,10 @@ document.querySelector("button.bars").addEventListener("click", function() {
 function check(media) {
   if (media.matches) {
     document.body.children[0].classList.add("small")
+    document.body.classList.add("small")
   } else {
    document.body.children[0].classList.remove("small")
+   document.body.classList.remove("small")
   }
 }
 minSize = window.matchMedia("(max-width: 1002px)")
