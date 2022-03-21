@@ -70,7 +70,6 @@ header {
   column-gap: 40px;
   height: 92px;
   transition: height 0.15s ease-in-out;
-  overflow-x: hidden;
 }
 
 header:not(.dropdowndisplay) {
@@ -192,6 +191,7 @@ header.small {
   position: absolute;
   width: 100%;
   top: 0px;
+  overflow-x: hidden;
 }
 
 body.small {
