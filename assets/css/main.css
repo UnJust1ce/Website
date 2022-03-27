@@ -20,12 +20,12 @@
 }
 
 body {
-  background-color: var(--ff-module-background);;
+  background-color: var(--ff-background);;
   margin: 0px;
   padding: 0px;
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 92px);
+  height: 100vh;
   color: var(--ff-text);
 }
 
@@ -196,6 +196,7 @@ header.small {
 
 body.small {
   margin-top: 92px;
+  height: calc(100vh - 92px);
 }
 
 header.dropdowndisplay.small .nav.dropdowndisplay .nav-ul .expanded ul {
